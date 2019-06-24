@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
     lists = []
     character_array = self.characters.collect { |character|character.name}
     show_array = self.shows.collect { |show| show.name}
-    list = character_array.concat show_array 
+    list = character_array.concat show_array
     lists << list.join(" - ")
 
    # binding.pry
