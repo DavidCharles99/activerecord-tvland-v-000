@@ -6,7 +6,7 @@ class Actor < ActiveRecord::Base
   end
 
 
-   def list_roles
+  def list_roles
     lists = []
     character_array = self.characters.collect { |character|character.name}
     show_array = self.shows.collect { |show| show.name}
